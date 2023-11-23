@@ -1,3 +1,6 @@
+import ast
+import json
+
 from flask import Flask, jsonify, request, session
 import grabData
 from flask_cors import CORS, cross_origin
@@ -11,6 +14,22 @@ my_dict = {
 }
 cors = CORS(app, resources={r"/": {"origins": "*"}})
 
+def extract_github_token(file_path):
+
+    # this ast converts a file to a graph structure
+    with open(file_path, 'r') as file:
+        file_content = file.read()
+        module = ast.parse(file_content, filename=file_path)
+        for node in module.body:
+            # module.exports.githubToken = '';, module.exports.githubToken is a type of target
+            if isinstance(node, ast.Assign):
+                dictionary_node = node.value
+
+                for key_node, value_node in zip(dictionary_node.keys, dictionary_node.values):
+                    if key_node.id == 'githubToken':
+                        return value_node.value
+    return None  # Return None if githubToken is not found
+
 
 @app.route('/send_repo', methods=['POST'])
 @cross_origin()
@@ -21,15 +40,14 @@ def process_data():
     my_dict['my_owner'] = username
     my_dict['my_repo_name'] = repo
 
-    data = {'message': 'Done importing all information! Redirecting...'}
-    my_access_token = "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"
+    github_token = extract_github_token('../src/auth_config.js')
 
     # Use the values stored in the session
     my_owner = my_dict.get('my_owner')
     my_repo_name = my_dict.get('my_repo_name')
 
     # Create an instance of GitHubRepoAnalyzer
-    analyzer = grabData.GitHubRepoAnalyzer(my_access_token, my_owner, my_repo_name)
+    analyzer = grabData.GitHubRepoAnalyzer(github_token, my_owner, my_repo_name)
 
     # Call the analyze_repo method to perform the analysis
     jsonfile = analyzer.analyze_repo()

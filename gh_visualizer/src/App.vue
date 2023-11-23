@@ -4,7 +4,7 @@
   <div class="container">
     <div class="logo-container">
       <!-- Place your logo here -->
-      <img src="./assets/company_logo.png" alt="Logo" class="logo" />
+      <img :src="this.picture" alt="Logo"/>
     </div>
 
     <div class="form-container">
@@ -28,10 +28,10 @@
 
     <div class="visualization-container">
       <!-- FileTree Component -->
-      <div v-if="this.rawFileTree !== ''">
-<!--        <FileTree v-for="(element, number) in this.data" :key="number" :treeMap="convertToFileTree(element.file_tree)" />-->
-        <FileTree :treeMap="convertToFileTree(this.rawFileTree)" />
-      </div>
+<!--      <div v-if="this.rawFileTree !== ''">-->
+<!--&lt;!&ndash;        <FileTree v-for="(element, number) in this.data" :key="number" :treeMap="convertToFileTree(element.file_tree)" />&ndash;&gt;-->
+<!--        <FileTree :treeMap="convertToFileTree(this.rawFileTree)" />-->
+<!--      </div>-->
       <div v-if="this.pullJSONData">
         <PullList :pulls="pullJSONData"></PullList>
       </div>
@@ -39,15 +39,17 @@
   </div>
 </template>
 <script>
-import FileTree from "@/components/FileTree.vue";
+// import FileTree from "@/components/FileTree.vue";
 import {Octokit} from "@octokit/rest";
 import axios from "axios";
 import PullList from "@/components/PullRequestList.vue";
+const config = require('@/auth_config.js');
+import picture from '/src/assets/company_logo.png'
 
 
-axios.defaults.baseURL = 'http://127.0.0.2:8080'
+axios.defaults.baseURL = process.env.VUE_APP_API_BASE_URL || 'http://127.0.0.2:8080'
 export default {
-  components: {PullList, FileTree},
+  components: {PullList},
 
   // components: {FileTree},
   data() {
@@ -55,6 +57,7 @@ export default {
       // by default, all data types ret
       loaded : false,
       loading: false,
+      picture: picture,
       username: 'TeamNewPipe',
       repo: 'NewPipe',
       branch: 'dev',
@@ -66,7 +69,6 @@ export default {
   },
   devServer: {
     devServer: {
-      port: 5000,
       proxy: {
         '/send_repo': {
           target: 'http://127.0.0.2:8080', // Replace with your Flask server address
@@ -101,7 +103,7 @@ export default {
     async getFileContents() {
       this.loading = true;
       const octokit = new Octokit({
-        auth: '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'
+        auth: config.githubToken
       })
 
       // const apiUrl = `https://api.github.com/repos/${this.username}/${this.repo}/contents/`;
