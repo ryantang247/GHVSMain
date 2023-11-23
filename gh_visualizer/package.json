@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.8.5",
+    "@mdi/font": "5.9.55",
     "@octokit/core": "^5.0.1",
     "@octokit/rest": "^20.0.2",
     "@vue/apollo-composable": "^4.0.0-beta.11",
@@ -25,8 +26,11 @@
     "graphql-tag": "^2.12.6",
     "octokit": "^3.1.1",
     "react": "^18.2.0",
-    "vue": "^3.2.13",
-    "vue-apollo": "^3.1.1"
+    "roboto-fontface": "*",
+    "vue": "^3.3.8",
+    "vue-apollo": "^3.1.1",
+    "vuetify": "^3.4.3",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -35,7 +39,9 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "webpack-plugin-vuetify": "^2.0.0-alpha.0"
   },
   "eslintConfig": {
     "root": true,

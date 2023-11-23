@@ -16,32 +16,38 @@
         Repository:
         <input v-model="repo" />
       </label>
+      <label>
+        Repository:
+        <input v-model="branch" />
+      </label>
       <button @click="postDataToBackend">Fetch Repository Info</button>
-
+      <button @click="getFileContents">Test Get Modified File</button>
       <div v-if="loading">Loading...</div>
       <div v-if="errorMessage != null">Error fetching data</div>
     </div>
 
     <div class="visualization-container">
       <!-- FileTree Component -->
-      <div>
+      <div v-if="this.rawFileTree !== ''">
 <!--        <FileTree v-for="(element, number) in this.data" :key="number" :treeMap="convertToFileTree(element.file_tree)" />-->
         <FileTree :treeMap="convertToFileTree(this.rawFileTree)" />
       </div>
+      <div v-if="this.pullJSONData">
+        <PullList :pulls="pullJSONData"></PullList>
+      </div>
     </div>
-
-    <GhAPI />
   </div>
 </template>
 <script>
 import FileTree from "@/components/FileTree.vue";
 import {Octokit} from "@octokit/rest";
-import GhAPI from "@/components/GitAPI.vue";
-import data from '@/output.json';
 import axios from "axios";
-axios.defaults.baseURL = process.env.VUE_APP_API_BASE_URL || 'http://127.0.0.1:5000'
+import PullList from "@/components/PullRequestList.vue";
+
+
+axios.defaults.baseURL = 'http://127.0.0.2:8080'
 export default {
-  components: {GhAPI, FileTree},
+  components: {PullList, FileTree},
 
   // components: {FileTree},
   data() {
@@ -51,21 +57,19 @@ export default {
       loading: false,
       username: 'TeamNewPipe',
       repo: 'NewPipe',
-      rawFileTree: data[0].file_tree,
-      filePaths: {},
-      currentCommit : {},
+      branch: 'dev',
+      rawFileTree: "",
       repository: {},
-      errorMessage: null,
       overall_tree: {},
       pullJSONData : "",
-      pullNumbers: []
     };
   },
   devServer: {
     devServer: {
+      port: 5000,
       proxy: {
         '/send_repo': {
-          target: 'http://localhost:5000', // Replace with your Flask server address
+          target: 'http://127.0.0.2:8080', // Replace with your Flask server address
           changeOrigin: true,
           ws: true,
         },
@@ -83,7 +87,11 @@ export default {
       axios.post('/send_repo',  data)
           .then(response => {
             // Process the response from the backend
-            console.log(response.data);
+            this.pullJSONData = response.data
+            this.rawFileTree = this.pullJSONData[0].file_tree
+            console.log(this.rawFileTree)
+            console.log(this.pullJSONData);
+
           })
           .catch(error => {
             // Handle errors
@@ -93,17 +101,16 @@ export default {
     async getFileContents() {
       this.loading = true;
       const octokit = new Octokit({
-        auth: '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'
+        auth: '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'
       })
 
       // const apiUrl = `https://api.github.com/repos/${this.username}/${this.repo}/contents/`;
 
       try {
-        const response = await octokit.request('GET /repos/{owner}/{repo}/pulls/{pull_number}/commits}', {
+        const response = await octokit.request('GET /repos/{owner}/{repo}/pulls', {
           owner: this.username,
           repo: this.repo,
-          pull_number: this.pull_id,
-          branch: 'main',
+          branch: this.branch,
           headers: {
             'Accept': 'application/vnd.github.v3.raw', // This header indicates that you want the raw content
           },

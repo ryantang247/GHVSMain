@@ -22,7 +22,7 @@ def process_data():
     my_dict['my_repo_name'] = repo
 
     data = {'message': 'Done importing all information! Redirecting...'}
-    my_access_token = "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"
+    my_access_token = "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"
 
     # Use the values stored in the session
     my_owner = my_dict.get('my_owner')
@@ -32,11 +32,11 @@ def process_data():
     analyzer = grabData.GitHubRepoAnalyzer(my_access_token, my_owner, my_repo_name)
 
     # Call the analyze_repo method to perform the analysis
-    analyzer.analyze_repo()
+    jsonfile = analyzer.analyze_repo()
 
     # Return the data as a JSON response
-    return jsonify(data)
+    return jsonfile
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='127.0.0.2', port=8080)
