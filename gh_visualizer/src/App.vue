@@ -26,7 +26,7 @@
       <div v-if="errorMessage != null">Error fetching data</div>
     </div>
 
-    <div class="visualization-container">
+    <div>
       <!-- FileTree Component -->
 <!--      <div v-if="this.rawFileTree !== ''">-->
 <!--&lt;!&ndash;        <FileTree v-for="(element, number) in this.data" :key="number" :treeMap="convertToFileTree(element.file_tree)" />&ndash;&gt;-->
@@ -34,6 +34,9 @@
 <!--      </div>-->
       <div v-if="this.pullJSONData">
         <PullList :pulls="pullJSONData"></PullList>
+      </div>
+      <div>
+
       </div>
     </div>
   </div>
@@ -45,7 +48,7 @@ import axios from "axios";
 import PullList from "@/components/PullRequestList.vue";
 const config = require('@/auth_config.js');
 import picture from '/src/assets/company_logo.png'
-
+import pulls from "./output.json"
 
 axios.defaults.baseURL = process.env.VUE_APP_API_BASE_URL || 'http://127.0.0.2:8080'
 export default {
@@ -64,7 +67,7 @@ export default {
       rawFileTree: "",
       repository: {},
       overall_tree: {},
-      pullJSONData : "",
+      pullJSONData : pulls,
     };
   },
   devServer: {
@@ -181,7 +184,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 
@@ -201,12 +203,6 @@ label{
 .form-container {
   text-align: center;
   margin-bottom: 20px;
-}
-
-.visualization-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
 }
 
 /* Add more styles as needed */

@@ -1,7 +1,8 @@
 <template>
+  <div class="flex-container">
   <div>
   <v-card
-    class="mx-auto pa-2 overflow-y-auto"
+    class="mx-auto pa-2 overflow-y-auto overflow-x:auto"
     max-width="400" max-height="400"
   >
       <v-list-subheader>Pull requests</v-list-subheader>
@@ -13,29 +14,31 @@
         color="primary"
         rounded="shaped"
       >
-<!--        <template v-slot:prepend>-->
-<!--          <v-icon :icon="item.icon"></v-icon>-->
-<!--        </template>-->
+        <div class="tooltip">
+        <v-list-item-title  @click="createTreeMap(pull)"  v-text="`${pull.number} ${pull.title}`">
+        </v-list-item-title>
 
-        <v-list-item-title @click="createTreeMap(pull)" v-text="`${pull.number} ${pull.title}`"></v-list-item-title>
+          <span class="tooltiptext">Tooltip text</span>
+        </div>
       </v-list-item>
   </v-card>
   </div>
   <div class="treemap-container">
     <div v-if="treeMap1" class="treemap">
       <button class="close-button" @click="removeTreeMap(1)">✕</button>
-      <TreeMap :treeMap="convertToFileTree(this.treeMap1.file_tree)" />
+      <TreeMap :treeMap="convertToFileTree(this.treeMap1.modified_files_data)" />
     </div>
     <div v-else class="empty-treemap">
       Select TreeMap 1
     </div>
     <div v-if="treeMap2" class="treemap">
       <button class="close-button" @click="removeTreeMap(2)">✕</button>
-      <TreeMap :treeMap="convertToFileTree(this.treeMap2.file_tree)" />
+      <TreeMap :treeMap="convertToFileTree(this.treeMap2.modified_files_data)" />
     </div>
     <div v-else class="empty-treemap">
       Select TreeMap 2
     </div>
+  </div>
   </div>
 </template>
 <script>
@@ -57,6 +60,7 @@ export default {
     return {
       data: this.pulls,
       isMouseDown: false,
+      tooltipIndex: null,
       treeMap1: null,
       treeMap2:null,
       mouseX: 0,
@@ -64,24 +68,27 @@ export default {
     };
   },
   methods:{
-    handleMouseDown() {
-      this.isMouseDown = true;
+    updateTooltipPosition(event) {
+      if (this.tooltipIndex !== null) {
+        const tooltip = this.$refs.tooltip;
+        if (tooltip) {
+          const x = event ? event.clientX : 0;
+          const y = event ? event.clientY : 0;
+
+          this.tooltipStyle = {
+            display: 'block',
+            left: `${x + 10}px`, // Adjust the offset as needed
+            top: `${y + 10}px`, // Adjust the offset as needed
+          };
+        }
+      }
+      },
+    showTooltip(index) {
+      this.tooltipIndex = index;
+      this.updateTooltipPosition();
     },
-    handleMouseUp() {
-      this.isMouseDown = false;
-    },
-    handleMouseMove(event) {
-      this.mouseX = event.clientX;
-      this.mouseY = event.clientY;
-    },
-    onDrag({ transform }) {
-      this.$refs.target.style.transform = transform;
-    },
-    onScale({ drag }) {
-      this.$refs.target.style.transform = drag.transform;
-    },
-    onRotate({ drag }) {
-      this.$refs.target.style.transform = drag.transform;
+    hideTooltip() {
+      this.tooltipIndex = null;
     },
     createTreeMap(data){
       if (this.treeMap1 == null) {
@@ -102,7 +109,11 @@ export default {
       const root = { name: "root", children: [] };
 
       fileStructure.forEach((path) => {
-        const parts = path.split('/');
+
+        const addNum = path.additions;
+        const deleNum = path.deletions;
+        const changeNum = path.changes;
+        const parts = path.filename.split('/');
         let currentDir = root;
 
         parts.forEach((part, index) => {
@@ -118,31 +129,30 @@ export default {
           if (isFile) {
             // Increment size for files
             node.value += 1;
+            node.addNum = addNum;
+            node.deleNum = deleNum;
+            node.changeNum = changeNum;
           }
 
           currentDir = node;
         });
       });
       const result = JSON.stringify(root, null, 2)
-      // console.log(result)
+      console.log(result)
       return result;
   }
   }
 }
 </script>
 <style>
-.tracking-area {
-  width: 300px;
-  height: 200px;
-  border: 1px solid #ccc;
-  padding: 20px;
-  cursor: pointer;
-}
+
 .treemap {
   flex: 1; /* Equal width for both treemaps */
   margin-right: 10px; /* Adjust margin between treemaps */
 }
 .treemap-container {
+  width: 2000px;
+  height: 1000px;
   display: flex;
   border: 1px solid #ccc; /* Border around the container */
 }
@@ -157,5 +167,28 @@ export default {
   justify-content: center;
   cursor: pointer;
   color: #888;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 600px;
+  height: 400px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.flex-container {
+  display: flex;
 }
 </style>
