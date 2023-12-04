@@ -17,8 +17,14 @@
         <div class="tooltip">
         <v-list-item-title  @click="createTreeMap(pull)"  v-text="`${pull.number} ${pull.title}`">
         </v-list-item-title>
-
-          <span class="tooltiptext">Tooltip text</span>
+          <span class="tooltiptext">
+            <v-row v-for="(label, index) in pull.labels_data" :key="index" align="center">
+            <v-col :style="{ backgroundColor: '#' + label.color, color: getContrastColor(label.color)
+            }" class="label">
+              {{ label.name }}
+            </v-col>
+          </v-row>
+          </span>
         </div>
       </v-list-item>
   </v-card>
@@ -105,6 +111,17 @@ export default {
 
       }
     },
+    getContrastColor(hexColor) {
+      const r = parseInt(hexColor.substring(0, 2), 16);
+      const g = parseInt(hexColor.substring(2, 4), 16);
+      const b = parseInt(hexColor.substring(4, 6), 16);
+
+      // Calculate luminance
+      const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+
+      // Return 'white' for dark backgrounds, 'black' for light backgrounds
+      return luminance > 0.5 ? 'black' : 'white';
+    },
     convertToFileTree(fileStructure) {
       const root = { name: "root", children: [] };
 
@@ -169,16 +186,16 @@ export default {
   color: #888;
 }
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltip {
+  display: inline-block;
+}
+.tooltiptext {
   visibility: hidden;
   width: 600px;
   height: 400px;
-  background-color: grey;
   color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-
+  text-align: left;
+  padding: 8px 0;
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;

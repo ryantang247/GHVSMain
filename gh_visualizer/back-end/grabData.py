@@ -102,3 +102,15 @@ class GitHubRepoAnalyzer:
         end_time = time.time()
         print(f"Output written to {self.__output_file_path}, take {end_time - start_time:.2f} seconds")
         return json.dumps(self.__all_pr_data, indent=2)
+
+if __name__ == '__main__':
+    # Replace with your actual access token, owner, and repo name
+    my_access_token = "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"
+    my_owner = "vuejs"
+    my_repo_name = "vue"
+
+    # Create an instance of GitHubRepoAnalyzer
+    analyzer = GitHubRepoAnalyzer(my_access_token, my_owner, my_repo_name)
+
+    # Call the analyze_repo method to perform the analysis
+    analyzer.analyze_repo()
