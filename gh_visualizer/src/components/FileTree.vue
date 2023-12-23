@@ -27,8 +27,8 @@ export default {
     *
     * */
     drawTreeMap() {
-      const width = 800;
-      const height = 700;
+      const width = 600;
+      const height = 800;
 
       const treemap = d3
           .treemap()
@@ -50,7 +50,7 @@ export default {
           .sum(d => d.value)
           .sort((a, b) => b.value - a.value);
 
-      console.log(root)
+      // console.log(root)
       treemap(root);
 
       svg
@@ -73,7 +73,7 @@ export default {
           .attr('y', d => d.y0 ) // Adjust the position as needed
           .attr('dy', '0.7em')
           .style('text-anchor', 'end')
-          .style('font-size', 8)
+          .style('font-size',14)
           .text(d => d.data.name)
 
       svg
@@ -86,7 +86,7 @@ export default {
           .attr('y', d => d.y0 + 10 )   // Adjust the position as needed
           .attr('dy', '1em')
           .style('text-anchor', 'end')
-          .style('font-size', 8)
+          .style('font-size', 14)
           .text(d => "Addnum: " +d.data.addNum);
 
       svg
@@ -99,7 +99,7 @@ export default {
           .attr('y', d => d.y0 + 20 )   // Adjust the position as needed
           .attr('dy', '1em')
           .style('text-anchor', 'end')
-          .style('font-size', 8)
+          .style('font-size', 14)
           .text(d => "Delenum: " +d.data.deleNum);
       // const width = 960,
       //     height = 1060;

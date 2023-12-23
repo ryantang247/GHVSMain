@@ -1,0 +1,2568 @@
+[
+    {
+        "number": 7462,
+        "created_at": "2018-01-16 23:33:24+00:00",
+        "author": "btkostner",
+        "title": "feat(ssr): add 'renderCriticalStyles' function for template",
+        "participants": [
+            "dsonet",
+            "btkostner",
+            "btkostner"
+        ]
+    },
+    {
+        "number": 8033,
+        "created_at": "2018-04-16 09:35:12+00:00",
+        "author": "zfeher",
+        "title": "feat(v-bind): add support for kebab-case update events #8004",
+        "participants": [
+            "zfeher"
+        ]
+    },
+    {
+        "number": 4739,
+        "created_at": "2017-01-18 09:03:13+00:00",
+        "author": "KingMario",
+        "title": "Bug fix for issue 4187 (recursive components) (Vue 1.x)",
+        "participants": [
+            "KingMario"
+        ]
+    },
+    {
+        "number": 4874,
+        "created_at": "2017-02-07 08:12:06+00:00",
+        "author": "Kingwl",
+        "title": "fix select bound with error index - fix #3821",
+        "participants": [
+            "Kingwl"
+        ]
+    },
+    {
+        "number": 7901,
+        "created_at": "2018-03-27 07:39:12+00:00",
+        "author": "pengchongfu",
+        "title": "fix(transition-group): ensure remove class v-enter-to after it was added",
+        "participants": [
+            "pengchongfu"
+        ]
+    },
+    {
+        "number": 7456,
+        "created_at": "2018-01-15 07:20:04+00:00",
+        "author": "KingMario",
+        "title": "bug-fix: multiple possible types (1.0.21+) array shortcut not working",
+        "participants": [
+            "KingMario"
+        ]
+    },
+    {
+        "number": 8006,
+        "created_at": "2018-04-12 07:31:11+00:00",
+        "author": "imyzf",
+        "title": "feat(weex): add code coverage test",
+        "participants": [
+            "Hanks10100",
+            "Hanks10100",
+            "imyzf"
+        ]
+    },
+    {
+        "number": 8038,
+        "created_at": "2018-04-16 20:30:51+00:00",
+        "author": "243083df",
+        "title": "refactor: Add isString",
+        "participants": [
+            "lusarz",
+            "linghengqian",
+            "243083df"
+        ]
+    },
+    {
+        "number": 7069,
+        "created_at": "2017-11-16 12:08:12+00:00",
+        "author": "st-sloth",
+        "title": "feat(v-on): add more precise names for pointer modifiers",
+        "participants": [
+            "st-sloth"
+        ]
+    },
+    {
+        "number": 7857,
+        "created_at": "2018-03-19 14:11:02+00:00",
+        "author": "superMDguy",
+        "title": "feat(compiler): add warning when directives other than v-for and v-if used on template tag",
+        "participants": [
+            "yyx990803",
+            "superMDguy"
+        ]
+    },
+    {
+        "number": 7906,
+        "created_at": "2018-03-27 14:52:18+00:00",
+        "author": "pengchongfu",
+        "title": "fix(transition-group): not add class v-move to v-show element",
+        "participants": [
+            "fnlctrl",
+            "pengchongfu"
+        ]
+    },
+    {
+        "number": 8051,
+        "created_at": "2018-04-19 02:34:47+00:00",
+        "author": "hatashiro",
+        "title": "feat(warn): Warn component names hyphenated into reserved names, fix #8025",
+        "participants": [
+            "hatashiro"
+        ]
+    },
+    {
+        "number": 8128,
+        "created_at": "2018-05-03 20:24:48+00:00",
+        "author": "carsongee",
+        "title": "Checked for undefined/null on component during destroy",
+        "participants": [
+            "carsongee"
+        ]
+    },
+    {
+        "number": 8143,
+        "created_at": "2018-05-07 12:34:37+00:00",
+        "author": "privatenumber",
+        "title": "Support `components` obj in functional components (fix #7492) (fix #6872)",
+        "participants": [
+            "privatenumber"
+        ]
+    },
+    {
+        "number": 8301,
+        "created_at": "2018-06-05 12:49:55+00:00",
+        "author": "jiangshanmeta",
+        "title": "feat(option): add optionNormalizeStrategies",
+        "participants": [
+            "jiangshanmeta"
+        ]
+    },
+    {
+        "number": 8499,
+        "created_at": "2018-07-16 13:25:35+00:00",
+        "author": "jessejyang",
+        "title": "fix(patch): static tree as same vnode(#8021)",
+        "participants": [
+            "jessejyang"
+        ]
+    },
+    {
+        "number": 8630,
+        "created_at": "2018-08-09 18:56:30+00:00",
+        "author": "privatenumber",
+        "title": "(fix #8337) test(component-slot): new child vnode gets destroyed instead of old one",
+        "participants": [
+            "privatenumber"
+        ]
+    },
+    {
+        "number": 8484,
+        "created_at": "2018-07-12 04:03:42+00:00",
+        "author": "yuchonghua",
+        "title": "Add a global Vue.depTarget api support",
+        "participants": [
+            "yuchonghua"
+        ]
+    },
+    {
+        "number": 8138,
+        "created_at": "2018-05-06 00:28:04+00:00",
+        "author": "bigtunacan",
+        "title": "fix: In development mode, warns if user tries to Vue.set a property t\u2026",
+        "participants": [
+            "posva",
+            "chrisvfritz",
+            "bigtunacan",
+            "dhensche",
+            "bigtunacan",
+            "posva",
+            "chrisvfritz",
+            "bigtunacan"
+        ]
+    },
+    {
+        "number": 8312,
+        "created_at": "2018-06-06 18:21:14+00:00",
+        "author": "yozman",
+        "title": "feat(core): add staticClass merge from slot",
+        "participants": [
+            "linghengqian",
+            "yozman"
+        ]
+    },
+    {
+        "number": 8157,
+        "created_at": "2018-05-09 16:23:09+00:00",
+        "author": "DavidReinberger",
+        "title": "perf(Dep.js): Dep now uses an object to handle subscriptions",
+        "participants": [
+            "yyx990803",
+            "DavidReinberger",
+            "DavidReinberger",
+            "DavidReinberger",
+            "pkf1994",
+            "DavidReinberger"
+        ]
+    },
+    {
+        "number": 8734,
+        "created_at": "2018-08-31 07:08:26+00:00",
+        "author": "HcySunYang",
+        "title": "fix(#8728): only execute the dependArray function once",
+        "participants": [
+            "wangyi7099",
+            "HcySunYang"
+        ]
+    },
+    {
+        "number": 4888,
+        "created_at": "2017-02-09 06:45:48+00:00",
+        "author": "Kingwl",
+        "title": "fix the wrong orders of call 'detached' and 'destroyed' hook - #3870",
+        "participants": [
+            "kazupon",
+            "posva",
+            "20uf",
+            "Kingwl"
+        ]
+    },
+    {
+        "number": 9006,
+        "created_at": "2018-10-31 02:23:19+00:00",
+        "author": "zwwill",
+        "title": "refactor: remove duplicate code",
+        "participants": [
+            "yyx990803",
+            "zwwill"
+        ]
+    },
+    {
+        "number": 9050,
+        "created_at": "2018-11-10 08:03:49+00:00",
+        "author": "kamilchlebek",
+        "title": "feat(parser): throw error when using interpolation instead of expresssion (#9038)",
+        "participants": [
+            "yyx990803",
+            "kamilchlebek",
+            "kamilchlebek"
+        ]
+    },
+    {
+        "number": 9369,
+        "created_at": "2019-01-25 10:08:52+00:00",
+        "author": "andoshin11",
+        "title": "feat(types): add DOM type definition for JSX element",
+        "participants": [
+            "andoshin11"
+        ]
+    },
+    {
+        "number": 9121,
+        "created_at": "2018-11-29 01:48:28+00:00",
+        "author": "btoo",
+        "title": "fix(types): Allow WatchHandler to be of string type even when used with WatchOptions",
+        "participants": [
+            "yyx990803",
+            "btoo"
+        ]
+    },
+    {
+        "number": 9143,
+        "created_at": "2018-12-04 20:52:20+00:00",
+        "author": "zleight1",
+        "title": "fix(parser#9038): Fix for slot \"name\" property using interpolation as well\u2026",
+        "participants": [
+            "satishrdd",
+            "zleight1",
+            "zleight1"
+        ]
+    },
+    {
+        "number": 9327,
+        "created_at": "2019-01-16 09:15:21+00:00",
+        "author": "MR-fisher",
+        "title": "fix #9284: Retrigger propsData getter before current watcher teardown",
+        "participants": [
+            "posva",
+            "MR-fisher",
+            "MR-fisher"
+        ]
+    },
+    {
+        "number": 9469,
+        "created_at": "2019-02-10 07:48:25+00:00",
+        "author": "alanchanzm",
+        "title": "refactor: remove duplicate import sources",
+        "participants": [
+            "alanchanzm"
+        ]
+    },
+    {
+        "number": 9430,
+        "created_at": "2019-02-05 17:46:09+00:00",
+        "author": "Justineo",
+        "title": "feat: add origin prop for <transition-group>, fix #8424",
+        "participants": [
+            "Justineo"
+        ]
+    },
+    {
+        "number": 9403,
+        "created_at": "2019-01-31 22:04:11+00:00",
+        "author": "damianstasik",
+        "title": "chore: add `repository.directory` field to each `package.json`",
+        "participants": [
+            "yyx990803",
+            "damianstasik"
+        ]
+    },
+    {
+        "number": 9479,
+        "created_at": "2019-02-12 02:46:51+00:00",
+        "author": "ronald-d-rogers",
+        "title": "feat(ssr): add ability to cleanup after request",
+        "participants": [
+            "ronald-d-rogers"
+        ]
+    },
+    {
+        "number": 9358,
+        "created_at": "2019-01-23 09:43:35+00:00",
+        "author": "posva",
+        "title": "feat(props): allow defining a required prop as null",
+        "participants": [
+            "dilraj-vidyard",
+            "posva"
+        ]
+    },
+    {
+        "number": 9470,
+        "created_at": "2019-02-10 08:09:21+00:00",
+        "author": "znck",
+        "title": "fix #9467, Custom validation message in custom prop validator",
+        "participants": [
+            "jacekkarczmarczyk",
+            "Shamrock3",
+            "znck"
+        ]
+    },
+    {
+        "number": 9502,
+        "created_at": "2019-02-15 09:54:06+00:00",
+        "author": "mitar",
+        "title": "Expose handleError utility function.",
+        "participants": [
+            "mitar"
+        ]
+    },
+    {
+        "number": 9567,
+        "created_at": "2019-02-25 03:28:06+00:00",
+        "author": "baleevskiy",
+        "title": "feat(build script): Return exit code",
+        "participants": [
+            "baleevskiy"
+        ]
+    },
+    {
+        "number": 9527,
+        "created_at": "2019-02-19 10:24:11+00:00",
+        "author": "jacobmllr95",
+        "title": "fix(util): handle more edge cases in `looseEqual()` util and add spec",
+        "participants": [
+            "posva",
+            "posva",
+            "posva",
+            "jacobmllr95",
+            "jacobmllr95",
+            "posva",
+            "jacobmllr95",
+            "jacobmllr95",
+            "tmorehouse",
+            "jacobmllr95"
+        ]
+    },
+    {
+        "number": 9591,
+        "created_at": "2019-02-28 08:21:57+00:00",
+        "author": "sh7dm",
+        "title": "feat: add access to context from serverPrefetch (fix #9447)",
+        "participants": [
+            "Justineo",
+            "sh7dm",
+            "sh7dm"
+        ]
+    },
+    {
+        "number": 9603,
+        "created_at": "2019-03-01 15:41:58+00:00",
+        "author": "sh7dm",
+        "title": "feat(types): improve some type definitions",
+        "participants": [
+            "sh7dm"
+        ]
+    },
+    {
+        "number": 9564,
+        "created_at": "2019-02-24 10:56:05+00:00",
+        "author": "sh7dm",
+        "title": "feat(lifecycle): add beforeDeactivate hook (implement #9454)",
+        "participants": [
+            "Justineo",
+            "sh7dm",
+            "sh7dm"
+        ]
+    },
+    {
+        "number": 9732,
+        "created_at": "2019-03-18 10:30:38+00:00",
+        "author": "pikax",
+        "title": "fix(types): support accessing inject as string array (#8969)",
+        "participants": [
+            "pikax"
+        ]
+    },
+    {
+        "number": 9635,
+        "created_at": "2019-03-06 08:45:35+00:00",
+        "author": "sh7dm",
+        "title": "test(types): improve tests for type definitions",
+        "participants": [
+            "posva",
+            "sh7dm"
+        ]
+    },
+    {
+        "number": 9636,
+        "created_at": "2019-03-06 10:44:42+00:00",
+        "author": "sh7dm",
+        "title": "chore(transition): improve warning when usuing invalid mode",
+        "participants": [
+            "posva",
+            "sh7dm",
+            "posva",
+            "voodee",
+            "sh7dm",
+            "sh7dm"
+        ]
+    },
+    {
+        "number": 9773,
+        "created_at": "2019-03-25 19:19:05+00:00",
+        "author": "baseprime",
+        "title": "#9772 TypeScript: Vue types $attrs should be type Record<string, any>",
+        "participants": [
+            "baseprime"
+        ]
+    },
+    {
+        "number": 9601,
+        "created_at": "2019-03-01 12:01:42+00:00",
+        "author": "sh7dm",
+        "title": "feat(global-api): warn when plugin is invalid",
+        "participants": [
+            "LinusBorg",
+            "jacekkarczmarczyk",
+            "sh7dm"
+        ]
+    },
+    {
+        "number": 9776,
+        "created_at": "2019-03-26 07:32:35+00:00",
+        "author": "Zhang-Wei-666",
+        "title": "Fix( unit ): using the. exact modifier error when all system modifiers",
+        "participants": [
+            "Zhang-Wei-666"
+        ]
+    },
+    {
+        "number": 9787,
+        "created_at": "2019-03-28 22:07:41+00:00",
+        "author": "backbone87",
+        "title": "fix(typings): wrongly typed AsyncComponentFactory",
+        "participants": [
+            "backbone87"
+        ]
+    },
+    {
+        "number": 9802,
+        "created_at": "2019-04-01 19:38:59+00:00",
+        "author": "clarkdo",
+        "title": "fix(webpack): production preload files",
+        "participants": [
+            "arzzen",
+            "clarkdo"
+        ]
+    },
+    {
+        "number": 9946,
+        "created_at": "2019-04-28 17:57:22+00:00",
+        "author": "damianstasik",
+        "title": "feat(ssr): add ability to set SSR content placeholder",
+        "participants": [
+            "damianstasik"
+        ]
+    },
+    {
+        "number": 9938,
+        "created_at": "2019-04-28 00:15:44+00:00",
+        "author": "TaylorFoster90",
+        "title": "fix(examples/select2): Prevents the change event from firing twice",
+        "participants": [
+            "TaylorFoster90"
+        ]
+    },
+    {
+        "number": 9814,
+        "created_at": "2019-04-02 20:14:19+00:00",
+        "author": "posva",
+        "title": "feat(model): add .eager modifier to v-model",
+        "participants": [
+            "richrd",
+            "posva"
+        ]
+    },
+    {
+        "number": 9919,
+        "created_at": "2019-04-24 21:49:53+00:00",
+        "author": "DaKoala",
+        "title": "feat: check if a tag is already in window.customElements",
+        "participants": [
+            "yyx990803",
+            "DaKoala",
+            "yyx990803",
+            "DaKoala"
+        ]
+    },
+    {
+        "number": 10073,
+        "created_at": "2019-05-27 15:18:48+00:00",
+        "author": "Domino9697",
+        "title": "Prevent rerender of child components that use $listeners (fix #7257)",
+        "participants": [
+            "Domino9697"
+        ]
+    },
+    {
+        "number": 10026,
+        "created_at": "2019-05-15 07:36:45+00:00",
+        "author": "underfin",
+        "title": "feat: improve `transition-group` support `keep-alive`(#10021)",
+        "participants": [
+            "underfin"
+        ]
+    },
+    {
+        "number": 10037,
+        "created_at": "2019-05-16 05:00:35+00:00",
+        "author": "underfin",
+        "title": "feat: add a prop named `error` to the ErrorComponent when load async \u2026",
+        "participants": [
+            "posva",
+            "lucalves",
+            "underfin"
+        ]
+    },
+    {
+        "number": 10099,
+        "created_at": "2019-06-04 03:46:58+00:00",
+        "author": "liximomo",
+        "title": "feat(update-listeners.js): allow pass undefined or null to event handler",
+        "participants": [
+            "liximomo"
+        ]
+    },
+    {
+        "number": 10142,
+        "created_at": "2019-06-12 13:30:24+00:00",
+        "author": "liximomo",
+        "title": "fix: memory leak caused by watcher created in initComputed",
+        "participants": [
+            "liximomo"
+        ]
+    },
+    {
+        "number": 10117,
+        "created_at": "2019-06-07 18:12:04+00:00",
+        "author": "daydream-like",
+        "title": "update try catch when set target.__proto__ (fix #9329)",
+        "participants": [
+            "daydream-like"
+        ]
+    },
+    {
+        "number": 10154,
+        "created_at": "2019-06-14 02:51:52+00:00",
+        "author": "liximomo",
+        "title": "polish: improve robustness of inject option",
+        "participants": [
+            "Justineo",
+            "liximomo"
+        ]
+    },
+    {
+        "number": 10202,
+        "created_at": "2019-06-27 01:17:41+00:00",
+        "author": "Vontus",
+        "title": "feat(events): add .emit event modifier (fix #9325)",
+        "participants": [
+            "Vontus"
+        ]
+    },
+    {
+        "number": 10245,
+        "created_at": "2019-07-08 08:56:37+00:00",
+        "author": "RobbinBaauw",
+        "title": "feat(keep-alive): includes/excludes keep-alive based on key and name (fix #8028)",
+        "participants": [
+            "RobbinBaauw"
+        ]
+    },
+    {
+        "number": 10199,
+        "created_at": "2019-06-26 05:52:30+00:00",
+        "author": "afontcu",
+        "title": "feat(warn): Warn on colon shorthand usage on directive (fix #10191)",
+        "participants": [
+            "posva",
+            "afontcu",
+            "posva",
+            "afontcu",
+            "posva",
+            "shivaylamba",
+            "3imed-jaberi",
+            "afontcu"
+        ]
+    },
+    {
+        "number": 10208,
+        "created_at": "2019-06-29 16:47:52+00:00",
+        "author": "BabyManisha",
+        "title": "fix(warning): Add context to warn message (close #10153)",
+        "participants": [
+            "posva",
+            "BabyManisha"
+        ]
+    },
+    {
+        "number": 10250,
+        "created_at": "2019-07-09 13:57:52+00:00",
+        "author": "tengmaoqing",
+        "title": "fix(vnode): support for browsers that do not support svg (fix #10248)",
+        "participants": [
+            "arzzen",
+            "darielopper",
+            "tengmaoqing"
+        ]
+    },
+    {
+        "number": 10292,
+        "created_at": "2019-07-19 03:21:55+00:00",
+        "author": "hanzhangyu",
+        "title": "refactor: use lastIndex provide by exec",
+        "participants": [
+            "hanzhangyu"
+        ]
+    },
+    {
+        "number": 10272,
+        "created_at": "2019-07-15 08:41:09+00:00",
+        "author": "zrh122",
+        "title": "fix(compiler): avoid overwriting when dynamic v-slot used with v-for",
+        "participants": [
+            "darielopper",
+            "zrh122"
+        ]
+    },
+    {
+        "number": 10253,
+        "created_at": "2019-07-10 08:03:54+00:00",
+        "author": "NataliaTepluhina",
+        "title": "fix: changed a type for AsyncComponentFactory component(fix #10252)",
+        "participants": [
+            "posva",
+            "posva",
+            "posva",
+            "Erthbgjvffbjg",
+            "dev-benguo",
+            "NataliaTepluhina"
+        ]
+    },
+    {
+        "number": 10286,
+        "created_at": "2019-07-18 03:39:15+00:00",
+        "author": "elevatebart",
+        "title": "feat(compiler): comments for if-else conditions",
+        "participants": [
+            "arzzen",
+            "darielopper",
+            "elevatebart"
+        ]
+    },
+    {
+        "number": 10341,
+        "created_at": "2019-08-03 15:06:07+00:00",
+        "author": "wujieZ",
+        "title": "tweak: let array index less than (2 ** 32 - 1) to fit Standard ECMA",
+        "participants": [
+            "darielopper",
+            "wujieZ"
+        ]
+    },
+    {
+        "number": 10361,
+        "created_at": "2019-08-07 09:48:52+00:00",
+        "author": "posva",
+        "title": "feat(compiler): allow inline async functions in event handlers",
+        "participants": [
+            "darielopper",
+            "posva"
+        ]
+    },
+    {
+        "number": 10377,
+        "created_at": "2019-08-10 20:23:45+00:00",
+        "author": "zrh122",
+        "title": "fix(compiler): fix nested v-slot not updating when used with v-if/v-else",
+        "participants": [
+            "darielopper",
+            "zrh122"
+        ]
+    },
+    {
+        "number": 10387,
+        "created_at": "2019-08-13 14:33:20+00:00",
+        "author": "pione30",
+        "title": "docs(contributing): fix project structure of types directory",
+        "participants": [
+            "arzzen",
+            "MrHeer",
+            "pione30"
+        ]
+    },
+    {
+        "number": 10394,
+        "created_at": "2019-08-14 06:11:32+00:00",
+        "author": "jamesgeorge007",
+        "title": "docs: update license badge url",
+        "participants": [
+            "arzzen",
+            "jamesgeorge007"
+        ]
+    },
+    {
+        "number": 10517,
+        "created_at": "2019-09-13 14:34:16+00:00",
+        "author": "paulkamer",
+        "title": "fix: Do not use micro tasks in Pale Moon browser (#10515)",
+        "participants": [
+            "paulkamer"
+        ]
+    },
+    {
+        "number": 10454,
+        "created_at": "2019-08-29 13:45:52+00:00",
+        "author": "sin1ght",
+        "title": "fix: update copy fnScopeId in patchVnode (fix: #10416)",
+        "participants": [
+            "sin1ght"
+        ]
+    },
+    {
+        "number": 10553,
+        "created_at": "2019-09-24 13:46:05+00:00",
+        "author": "oguimbal",
+        "title": "fix(compiler): infinite loop in generateCodeFrame (#10547)",
+        "participants": [
+            "oguimbal"
+        ]
+    },
+    {
+        "number": 10413,
+        "created_at": "2019-08-19 13:47:19+00:00",
+        "author": "herrernst",
+        "title": "fix: binding of `muted` dom property for <audio>",
+        "participants": [
+            "posva",
+            "sxzz",
+            "herrernst"
+        ]
+    },
+    {
+        "number": 10601,
+        "created_at": "2019-10-05 15:40:09+00:00",
+        "author": "mbpreble",
+        "title": "test(children.spec.js): fix flaky test (fix #10530)",
+        "participants": [
+            "mbpreble"
+        ]
+    },
+    {
+        "number": 10621,
+        "created_at": "2019-10-11 13:36:18+00:00",
+        "author": "tomerry",
+        "title": "Update index.js",
+        "participants": [
+            "tomerry"
+        ]
+    },
+    {
+        "number": 10615,
+        "created_at": "2019-10-10 16:29:18+00:00",
+        "author": "xieranmaya",
+        "title": "fix #10614: the select's v-model set to `undefined` in some corner case",
+        "participants": [
+            "xieranmaya",
+            "xieranmaya"
+        ]
+    },
+    {
+        "number": 10459,
+        "created_at": "2019-08-30 15:48:42+00:00",
+        "author": "ericdrobinson",
+        "title": "bail out of event blocking for Adobe CEP bug (fix #10366)",
+        "participants": [
+            "derrickb",
+            "ericdrobinson",
+            "posva",
+            "posva",
+            "posva",
+            "derrickb",
+            "ericdrobinson",
+            "ericdrobinson",
+            "bbb999",
+            "ericdrobinson",
+            "ericdrobinson",
+            "ericdrobinson",
+            "posva",
+            "ericdrobinson"
+        ]
+    },
+    {
+        "number": 10627,
+        "created_at": "2019-10-13 13:10:55+00:00",
+        "author": "yukukotani",
+        "title": "Apply :duration property for list transition, fixes #10626",
+        "participants": [
+            "posva",
+            "Justineo",
+            "yukukotani",
+            "Justineo",
+            "yukukotani"
+        ]
+    },
+    {
+        "number": 10722,
+        "created_at": "2019-10-16 20:45:02+00:00",
+        "author": "SimonSiefke",
+        "title": "fix(core): hot reloading issue #10721",
+        "participants": [
+            "SimonSiefke"
+        ]
+    },
+    {
+        "number": 10735,
+        "created_at": "2019-10-20 20:51:58+00:00",
+        "author": "Farzannajipour",
+        "title": "Update style.css",
+        "participants": [
+            "cuongdevjs",
+            "Farzannajipour"
+        ]
+    },
+    {
+        "number": 10741,
+        "created_at": "2019-10-21 13:56:06+00:00",
+        "author": "xx1124961758",
+        "title": "feat: support symbols as keys in observed objects",
+        "participants": [
+            "xx1124961758"
+        ]
+    },
+    {
+        "number": 10740,
+        "created_at": "2019-10-21 12:59:07+00:00",
+        "author": "trykers",
+        "title": "Vnode $scopedSlot with no prop (like callback)",
+        "participants": [
+            "posva",
+            "trykers"
+        ]
+    },
+    {
+        "number": 10774,
+        "created_at": "2019-10-29 03:00:20+00:00",
+        "author": "cutPicturesMan",
+        "title": "feat(optimizer): remove unnecessary if statement",
+        "participants": [
+            "cutPicturesMan"
+        ]
+    },
+    {
+        "number": 10743,
+        "created_at": "2019-10-22 05:45:06+00:00",
+        "author": "emensch",
+        "title": "fix #10812: Update compiler module types to include optional modifiers",
+        "participants": [
+            "emensch"
+        ]
+    },
+    {
+        "number": 10794,
+        "created_at": "2019-11-04 14:46:52+00:00",
+        "author": "jeanphilippeds",
+        "title": "Fix #9847 Add shouldRenderAsyncScripts option",
+        "participants": [
+            "jeanphilippeds"
+        ]
+    },
+    {
+        "number": 10847,
+        "created_at": "2019-11-20 07:49:59+00:00",
+        "author": "sebasaenz",
+        "title": "fix(warn): warns when template has v-show attribute (close #10786)",
+        "participants": [
+            "sebasaenz"
+        ]
+    },
+    {
+        "number": 10877,
+        "created_at": "2019-11-30 15:49:59+00:00",
+        "author": "jeanphilippeds",
+        "title": "fix: mergeHook when parentVal is not an array",
+        "participants": [
+            "jeanphilippeds"
+        ]
+    },
+    {
+        "number": 10879,
+        "created_at": "2019-11-30 22:54:40+00:00",
+        "author": "tjenkinson",
+        "title": "perf: add rollup-plugin-json-parse",
+        "participants": [
+            "tjenkinson"
+        ]
+    },
+    {
+        "number": 10865,
+        "created_at": "2019-11-26 06:18:31+00:00",
+        "author": "HOUCe",
+        "title": "feat: use queueMicrotask for nextTick timerFunc",
+        "participants": [
+            "Justineo",
+            "Justineo",
+            "Justineo",
+            "HOUCe"
+        ]
+    },
+    {
+        "number": 10916,
+        "created_at": "2019-12-09 21:22:49+00:00",
+        "author": "Opinion",
+        "title": "Change spelling of cryptocurrencies",
+        "participants": [
+            "MrHeer",
+            "Opinion"
+        ]
+    },
+    {
+        "number": 10922,
+        "created_at": "2019-12-11 17:51:50+00:00",
+        "author": "KonradNowacki",
+        "title": "unnecessary semicolon?",
+        "participants": [
+            "MrHeer",
+            "KonradNowacki"
+        ]
+    },
+    {
+        "number": 10996,
+        "created_at": "2020-01-09 08:25:15+00:00",
+        "author": "huoyuxin",
+        "title": "fix: Cannot read property 'isString' of undefined (it happend that ch\u2026",
+        "participants": [
+            "huoyuxin"
+        ]
+    },
+    {
+        "number": 10993,
+        "created_at": "2020-01-09 01:40:46+00:00",
+        "author": "dsanders11",
+        "title": "fix: clear extra styles when hydrating/mounting element",
+        "participants": [
+            "dsanders11"
+        ]
+    },
+    {
+        "number": 10947,
+        "created_at": "2019-12-21 11:00:37+00:00",
+        "author": "haochenli",
+        "title": "fix: fix(v-model): fix inline style not coporate with web (close #10946)",
+        "participants": [
+            "haochenli"
+        ]
+    },
+    {
+        "number": 11030,
+        "created_at": "2020-01-18 17:19:20+00:00",
+        "author": "Bixbite-Gem",
+        "title": "fix(build): uprgade http-server (#11027)",
+        "participants": [
+            "Bixbite-Gem"
+        ]
+    },
+    {
+        "number": 11021,
+        "created_at": "2020-01-17 13:56:22+00:00",
+        "author": "dsanders11",
+        "title": "feat(ssr): add integrity and crossorigin support",
+        "participants": [
+            "dsanders11"
+        ]
+    },
+    {
+        "number": 11047,
+        "created_at": "2020-01-25 19:34:45+00:00",
+        "author": "FredKSchott",
+        "title": "Export public types from types/options.d.ts",
+        "participants": [
+            "FredKSchott"
+        ]
+    },
+    {
+        "number": 11024,
+        "created_at": "2020-01-18 02:26:03+00:00",
+        "author": "benmurden",
+        "title": "Fix wording in hydration error message",
+        "participants": [
+            "MrHeer",
+            "benmurden"
+        ]
+    },
+    {
+        "number": 11128,
+        "created_at": "2020-02-19 15:10:13+00:00",
+        "author": "yannisgu",
+        "title": "fix(transition-group): handle non-visible list items, fix #8516",
+        "participants": [
+            "yannisgu"
+        ]
+    },
+    {
+        "number": 11111,
+        "created_at": "2020-02-15 02:10:17+00:00",
+        "author": "deqwin",
+        "title": "fix(ssr): ignore empty text vnode when hydrating (fix #11109)",
+        "participants": [
+            "posva",
+            "contribu",
+            "deqwin",
+            "deqwin",
+            "deqwin",
+            "contribu",
+            "deqwin",
+            "contribu",
+            "deqwin"
+        ]
+    },
+    {
+        "number": 11138,
+        "created_at": "2020-02-23 04:04:08+00:00",
+        "author": "geongeorge",
+        "title": "fix(compiler): Better whitespace regex",
+        "participants": [
+            "cuongdevjs",
+            "cuongdevjs",
+            "posva",
+            "geongeorge"
+        ]
+    },
+    {
+        "number": 11195,
+        "created_at": "2020-03-09 10:03:24+00:00",
+        "author": "iiijarvis",
+        "title": "modify attribute regexp",
+        "participants": [
+            "iiijarvis"
+        ]
+    },
+    {
+        "number": 11139,
+        "created_at": "2020-02-24 17:06:42+00:00",
+        "author": "aKzenT",
+        "title": "$mount can be called on comment node",
+        "participants": [
+            "aKzenT"
+        ]
+    },
+    {
+        "number": 11094,
+        "created_at": "2020-02-08 22:15:09+00:00",
+        "author": "clarkdo",
+        "title": "feat(ssr): support custom attributes in render scripts",
+        "participants": [
+            "clarkdo"
+        ]
+    },
+    {
+        "number": 11166,
+        "created_at": "2020-03-01 00:03:15+00:00",
+        "author": "marcosvidolin",
+        "title": "docs(grid component example): Removed autocomplete to avoid boring history",
+        "participants": [
+            "marcosvidolin"
+        ]
+    },
+    {
+        "number": 11229,
+        "created_at": "2020-03-22 05:05:36+00:00",
+        "author": "abrahamguo",
+        "title": "feat(core): observe array changes from fill and copywithin methods (re #10973)",
+        "participants": [
+            "abrahamguo"
+        ]
+    },
+    {
+        "number": 11143,
+        "created_at": "2020-02-25 17:28:46+00:00",
+        "author": "tyschroed",
+        "title": "$http.delete shows warning \"avoid using JavaScript unary operator as property name\" (fix #11090)",
+        "participants": [
+            "painotpi",
+            "flyfishzy",
+            "tyschroed"
+        ]
+    },
+    {
+        "number": 11223,
+        "created_at": "2020-03-19 22:47:36+00:00",
+        "author": "kjleitz",
+        "title": "fix(types): fix function prop type inference",
+        "participants": [
+            "kjleitz",
+            "kjleitz",
+            "kjleitz"
+        ]
+    },
+    {
+        "number": 11247,
+        "created_at": "2020-03-26 13:35:36+00:00",
+        "author": "mydaoyuan",
+        "title": "fix(patch.js): fix functional component scope attribute update",
+        "participants": [
+            "mydaoyuan"
+        ]
+    },
+    {
+        "number": 11284,
+        "created_at": "2020-04-06 08:52:31+00:00",
+        "author": "zhangchen915",
+        "title": "fix(parser): \"checkInFor\" should search up to inline-template",
+        "participants": [
+            "zhangchen915"
+        ]
+    },
+    {
+        "number": 11235,
+        "created_at": "2020-03-23 08:41:08+00:00",
+        "author": "yoyo930021",
+        "title": "fix #8721,#9873: wrong type when computed return about this",
+        "participants": [
+            "ktsn",
+            "yoyo930021"
+        ]
+    },
+    {
+        "number": 11298,
+        "created_at": "2020-04-09 03:51:53+00:00",
+        "author": "Brooooooklyn",
+        "title": "feat(server): make MAX_STACK_DEPTH configurable",
+        "participants": [
+            "Brooooooklyn"
+        ]
+    },
+    {
+        "number": 11306,
+        "created_at": "2020-04-12 12:28:14+00:00",
+        "author": "zhangzhonghe",
+        "title": "fix(optimizer): change FULL to CHILDREN when v-if and v-html or v-tex\u2026",
+        "participants": [
+            "zhangzhonghe"
+        ]
+    },
+    {
+        "number": 11413,
+        "created_at": "2020-05-26 04:34:19+00:00",
+        "author": "Th0rN13",
+        "title": "Fix repetitive call function in utils/cached, if result falsey",
+        "participants": [
+            "Th0rN13"
+        ]
+    },
+    {
+        "number": 11351,
+        "created_at": "2020-04-27 15:48:05+00:00",
+        "author": "IWANABETHATGUY",
+        "title": "types(Vue.use): fix #10573, better Vue.use type inference ",
+        "participants": [
+            "IWANABETHATGUY"
+        ]
+    },
+    {
+        "number": 11422,
+        "created_at": "2020-06-01 05:41:06+00:00",
+        "author": "dyu",
+        "title": "fix keep-alive memory leak",
+        "participants": [
+            "dyu"
+        ]
+    },
+    {
+        "number": 11332,
+        "created_at": "2020-04-21 03:58:59+00:00",
+        "author": "andrehrferreira",
+        "title": "correction when nodeOps.tagName returns value other than string",
+        "participants": [
+            "jacekkarczmarczyk",
+            "andrehrferreira"
+        ]
+    },
+    {
+        "number": 11419,
+        "created_at": "2020-05-30 19:20:30+00:00",
+        "author": "Exauthor",
+        "title": "Add 'is' key in VNodeData for dynamic components.",
+        "participants": [
+            "Exauthor"
+        ]
+    },
+    {
+        "number": 11456,
+        "created_at": "2020-06-15 09:24:52+00:00",
+        "author": "WesleyQ5233",
+        "title": "fix(shared/util): add 'bigint' into the test of isPrimitive",
+        "participants": [
+            "WesleyQ5233"
+        ]
+    },
+    {
+        "number": 11436,
+        "created_at": "2020-06-04 23:09:02+00:00",
+        "author": "mpawelski",
+        "title": "chore(warning): Add \"symbol\" and \"boolean\" for \"key\" warning",
+        "participants": [
+            "posva",
+            "mpawelski"
+        ]
+    },
+    {
+        "number": 11327,
+        "created_at": "2020-04-19 09:18:14+00:00",
+        "author": "JunilHwang",
+        "title": "fix(types): template of BundleRendererOptions be can Function",
+        "participants": [
+            "JunilHwang"
+        ]
+    },
+    {
+        "number": 11463,
+        "created_at": "2020-06-18 05:25:35+00:00",
+        "author": "wonhyoung05",
+        "title": "fix(compiler): Line breaks in textarea are not removed. (fix: #11446)",
+        "participants": [
+            "3imed-jaberi",
+            "wonhyoung05"
+        ]
+    },
+    {
+        "number": 11479,
+        "created_at": "2020-06-30 04:02:50+00:00",
+        "author": "ErvenDai",
+        "title": "Feat/errorhandler computed",
+        "participants": [
+            "fanchong02",
+            "MohamedBeydoun",
+            "ErvenDai"
+        ]
+    },
+    {
+        "number": 11509,
+        "created_at": "2020-07-11 15:15:23+00:00",
+        "author": "JuniorTour",
+        "title": "chore(compiler): remove unused parameter of parseEndTag",
+        "participants": [
+            "JuniorTour"
+        ]
+    },
+    {
+        "number": 11518,
+        "created_at": "2020-07-15 08:41:07+00:00",
+        "author": "fish-inu",
+        "title": "chore: update production mode usage of webpack in readme for dist folder",
+        "participants": [
+            "fish-inu"
+        ]
+    },
+    {
+        "number": 11563,
+        "created_at": "2020-08-04 16:44:23+00:00",
+        "author": "JuniorTour",
+        "title": "fix(compiler): support decode &nbsp; in the value of prop and attribute",
+        "participants": [
+            "JuniorTour"
+        ]
+    },
+    {
+        "number": 11583,
+        "created_at": "2020-08-09 23:10:42+00:00",
+        "author": "kellymears",
+        "title": "Improve inBrowser sniffing",
+        "participants": [
+            "kellymears"
+        ]
+    },
+    {
+        "number": 11523,
+        "created_at": "2020-07-17 16:33:53+00:00",
+        "author": "CallumChaney",
+        "title": "fix(#11040): Add a warning when binding to object with empty keys",
+        "participants": [
+            "posva",
+            "Gonzo4046",
+            "CallumChaney"
+        ]
+    },
+    {
+        "number": 11565,
+        "created_at": "2020-08-04 21:19:41+00:00",
+        "author": "Y--",
+        "title": "perf: avoid copying array if not necessary",
+        "participants": [
+            "posva",
+            "posva",
+            "posva",
+            "Y--"
+        ]
+    },
+    {
+        "number": 11578,
+        "created_at": "2020-08-08 11:03:19+00:00",
+        "author": "christoph-schaeffer",
+        "title": "fix: iframe-window-name-update",
+        "participants": [
+            "posva",
+            "krishan",
+            "christoph-schaeffer"
+        ]
+    },
+    {
+        "number": 11599,
+        "created_at": "2020-08-16 03:42:18+00:00",
+        "author": "JuniorTour",
+        "title": "fix(compiler): support decode all HTML entities in the value of prop and attribute (fix #8895)",
+        "participants": [
+            "JuniorTour"
+        ]
+    },
+    {
+        "number": 11702,
+        "created_at": "2020-10-03 15:03:22+00:00",
+        "author": "Thanarathanam",
+        "title": "feat(vdom): native modifier for props will add it as attribute of component's root element refer Issue:11601",
+        "participants": [
+            "Thanarathanam"
+        ]
+    },
+    {
+        "number": 11699,
+        "created_at": "2020-10-02 13:55:26+00:00",
+        "author": "markjszy",
+        "title": "fix: update karma and webpack dependencies for OS X builds on Node v12",
+        "participants": [
+            "markjszy"
+        ]
+    },
+    {
+        "number": 11707,
+        "created_at": "2020-10-05 21:52:21+00:00",
+        "author": "davestewart",
+        "title": "fix(transition component): fix transitions for 3d-transformed elements (fix #11376)",
+        "participants": [
+            "davestewart"
+        ]
+    },
+    {
+        "number": 11712,
+        "created_at": "2020-10-07 06:54:24+00:00",
+        "author": "gibkigonzo",
+        "title": "feat(ssr): add context to shouldPrefetch and shouldPreload",
+        "participants": [
+            "gibkigonzo"
+        ]
+    },
+    {
+        "number": 11725,
+        "created_at": "2020-10-16 13:22:13+00:00",
+        "author": "him2him2",
+        "title": "Update HTTP -> HTTPS",
+        "participants": [
+            "Polydynamical",
+            "him2him2"
+        ]
+    },
+    {
+        "number": 11726,
+        "created_at": "2020-10-17 12:55:47+00:00",
+        "author": "shadowings-zy",
+        "title": "fix(render): $scopedSlots shoud not empty in beforeMount (#11714)",
+        "participants": [
+            "shadowings-zy"
+        ]
+    },
+    {
+        "number": 11776,
+        "created_at": "2020-11-17 15:31:08+00:00",
+        "author": "vegerot",
+        "title": "fix(dev): allow performance marking in production (fix #11775)",
+        "participants": [
+            "vegerot"
+        ]
+    },
+    {
+        "number": 11777,
+        "created_at": "2020-11-17 16:29:35+00:00",
+        "author": "amkamn",
+        "title": "remove valueless code",
+        "participants": [
+            "amkamn"
+        ]
+    },
+    {
+        "number": 11790,
+        "created_at": "2020-11-24 08:20:57+00:00",
+        "author": "posva",
+        "title": "fix(runtime): use key variable for svg innerHTML",
+        "participants": [
+            "posva"
+        ]
+    },
+    {
+        "number": 11762,
+        "created_at": "2020-11-09 16:28:39+00:00",
+        "author": "Byloth",
+        "title": "fix(vue.d.ts): add mixin type definition (fix #11759)",
+        "participants": [
+            "Byloth"
+        ]
+    },
+    {
+        "number": 11829,
+        "created_at": "2020-12-17 09:06:24+00:00",
+        "author": "katarzyna-stachura-orba",
+        "title": "fix(ssr): prevent rendering duplicate css references",
+        "participants": [
+            "katarzyna-stachura-orba"
+        ]
+    },
+    {
+        "number": 11826,
+        "created_at": "2020-12-16 12:42:52+00:00",
+        "author": "blake-newman",
+        "title": "feat(ssr): add csp nonce to all elements",
+        "participants": [
+            "posva",
+            "blake-newman"
+        ]
+    },
+    {
+        "number": 11814,
+        "created_at": "2020-12-09 06:01:42+00:00",
+        "author": "lduoduo",
+        "title": "fix: make ssr-build-plugin compatible with webpack4/5 (fix #11718)",
+        "participants": [
+            "Octalbyte",
+            "Octalbyte",
+            "lduoduo"
+        ]
+    },
+    {
+        "number": 11830,
+        "created_at": "2020-12-17 13:27:20+00:00",
+        "author": "javoski",
+        "title": "feat(v-model): add lazy modifier for v-model on components(close #6914)",
+        "participants": [
+            "javoski"
+        ]
+    },
+    {
+        "number": 11846,
+        "created_at": "2020-12-30 17:48:26+00:00",
+        "author": "pravi",
+        "title": "feat(build): update build dependencies",
+        "participants": [
+            "pravi"
+        ]
+    },
+    {
+        "number": 11861,
+        "created_at": "2021-01-10 10:10:01+00:00",
+        "author": "markyong",
+        "title": "refactor(v-model): reuse toRawType util",
+        "participants": [
+            "3imed-jaberi",
+            "andikaleonardo",
+            "3imed-jaberi",
+            "markyong"
+        ]
+    },
+    {
+        "number": 11957,
+        "created_at": "2021-03-14 04:04:41+00:00",
+        "author": "JuniorTour",
+        "title": "fix(v-model): ensure v-model listener trigger before listener with modifier(fix #11925)",
+        "participants": [
+            "JuniorTour"
+        ]
+    },
+    {
+        "number": 11882,
+        "created_at": "2021-01-21 16:26:41+00:00",
+        "author": "JerryYuanJ",
+        "title": "feat(keep-alive): allow spaces between comas in include",
+        "participants": [
+            "Progowi",
+            "JerryYuanJ",
+            "3imed-jaberi",
+            "Leo-liiiiii",
+            "w3bdesign",
+            "suyundukov",
+            "JerryYuanJ",
+            "suyundukov",
+            "suyundukov",
+            "JerryYuanJ",
+            "JerryYuanJ"
+        ]
+    },
+    {
+        "number": 11921,
+        "created_at": "2021-02-19 13:55:47+00:00",
+        "author": "bowencool",
+        "title": "feat(build): add sourceMap",
+        "participants": [
+            "CyberFlameGO",
+            "CyberFlameGO",
+            "CyberFlameGO",
+            "bowencool"
+        ]
+    },
+    {
+        "number": 12010,
+        "created_at": "2021-04-09 17:41:58+00:00",
+        "author": "JASONPANGGO",
+        "title": "style(traverse): declare the key const when needed",
+        "participants": [
+            "JASONPANGGO"
+        ]
+    },
+    {
+        "number": 11976,
+        "created_at": "2021-03-24 03:22:13+00:00",
+        "author": "constantank",
+        "title": "refactor: cache index for callbacks,  remove redundant watcher",
+        "participants": [
+            "constantank"
+        ]
+    },
+    {
+        "number": 11968,
+        "created_at": "2021-03-18 08:22:37+00:00",
+        "author": "gavinl",
+        "title": "Add GitHub Code Scanning",
+        "participants": [
+            "NeonWizard",
+            "gavinl"
+        ]
+    },
+    {
+        "number": 12087,
+        "created_at": "2021-05-21 20:30:24+00:00",
+        "author": "ateirney",
+        "title": "fix: #10435 update the observer dep to support a Set based implementation",
+        "participants": [
+            "ateirney"
+        ]
+    },
+    {
+        "number": 12078,
+        "created_at": "2021-05-17 09:40:36+00:00",
+        "author": "curiositycigar",
+        "title": "fix: keep-alive not work after component destroyed",
+        "participants": [
+            "curiositycigar"
+        ]
+    },
+    {
+        "number": 12092,
+        "created_at": "2021-05-26 06:52:59+00:00",
+        "author": "beishuangzz",
+        "title": "fix the hot reload problem when use keep-alive wrap router-view with a dynamic key link:https://github.com/vuejs/vue-loader/issues/1332",
+        "participants": [
+            "beishuangzz"
+        ]
+    },
+    {
+        "number": 12123,
+        "created_at": "2021-06-08 14:18:08+00:00",
+        "author": "Glandos",
+        "title": "perf(core): getType uses a cache for well known types.",
+        "participants": [
+            "Glandos"
+        ]
+    },
+    {
+        "number": 12132,
+        "created_at": "2021-06-15 08:05:52+00:00",
+        "author": "ygj6",
+        "title": "feat(types): add declaration of defineReactive to adapt composition-api.",
+        "participants": [
+            "andikaleonardo",
+            "posva",
+            "ygj6"
+        ]
+    },
+    {
+        "number": 12182,
+        "created_at": "2021-07-12 06:50:51+00:00",
+        "author": "dolymood",
+        "title": "remove useless removed",
+        "participants": [
+            "dolymood"
+        ]
+    },
+    {
+        "number": 12190,
+        "created_at": "2021-07-21 02:01:34+00:00",
+        "author": "kankan54",
+        "title": "fix: remove unnecessary deep condition check",
+        "participants": [
+            "kankan54"
+        ]
+    },
+    {
+        "number": 12219,
+        "created_at": "2021-08-15 04:26:59+00:00",
+        "author": "tgroshon",
+        "title": "docs: add missing comma and drop incorrect hyphen",
+        "participants": [
+            "tgroshon"
+        ]
+    },
+    {
+        "number": 12218,
+        "created_at": "2021-08-13 11:30:49+00:00",
+        "author": "okj579",
+        "title": "Add Vue context to computed options type (fix #10878)",
+        "participants": [
+            "okj579"
+        ]
+    },
+    {
+        "number": 12242,
+        "created_at": "2021-08-24 21:17:45+00:00",
+        "author": "privatenumber",
+        "title": "fix(server-renderer): provide __filename to vm for webpack",
+        "participants": [
+            "privatenumber"
+        ]
+    },
+    {
+        "number": 12244,
+        "created_at": "2021-08-26 14:36:09+00:00",
+        "author": "JuniorTour",
+        "title": "fix(compiler): scoped slot with v-else-if not update (fix #12223)",
+        "participants": [
+            "JuniorTour"
+        ]
+    },
+    {
+        "number": 12265,
+        "created_at": "2021-09-08 16:04:28+00:00",
+        "author": "JuniorTour",
+        "title": "fix(compiler): nested scoped slot not update (fix #12232, #12245)",
+        "participants": [
+            "JuniorTour"
+        ]
+    },
+    {
+        "number": 12272,
+        "created_at": "2021-09-11 18:58:07+00:00",
+        "author": "kikuchan",
+        "title": "fix(core): fix type check for Date prop",
+        "participants": [
+            "kikuchan"
+        ]
+    },
+    {
+        "number": 12284,
+        "created_at": "2021-09-18 09:07:43+00:00",
+        "author": "Notryag",
+        "title": "chore: fix typo in async-component-test.ts [ci skip]",
+        "participants": [
+            "Notryag"
+        ]
+    },
+    {
+        "number": 12292,
+        "created_at": "2021-09-22 12:36:18+00:00",
+        "author": "shenqinglin",
+        "title": "Update config.js",
+        "participants": [
+            "shenqinglin"
+        ]
+    },
+    {
+        "number": 12320,
+        "created_at": "2021-10-11 16:03:29+00:00",
+        "author": "869288142",
+        "title": "fix(asyncComponent): unwrap default in Symbol.toStringTag es module hint",
+        "participants": [
+            "869288142"
+        ]
+    },
+    {
+        "number": 12318,
+        "created_at": "2021-10-09 23:42:41+00:00",
+        "author": "cutiful",
+        "title": "chore(warn): fix camelCase event tip",
+        "participants": [
+            "posva",
+            "cutiful"
+        ]
+    },
+    {
+        "number": 12321,
+        "created_at": "2021-10-11 23:24:02+00:00",
+        "author": "yuwu9145",
+        "title": "fix(compiler): skip if guard when condition is empty after modifiers",
+        "participants": [
+            "posva",
+            "posva",
+            "yuwu9145"
+        ]
+    },
+    {
+        "number": 12343,
+        "created_at": "2021-11-02 07:31:45+00:00",
+        "author": "Rudeus3Greyrat",
+        "title": "feat(compiler):add console warning about 'this.' used in templates",
+        "participants": [
+            "Rudeus3Greyrat"
+        ]
+    },
+    {
+        "number": 12338,
+        "created_at": "2021-10-27 12:25:47+00:00",
+        "author": "wangjingf",
+        "title": "fixbug 10547",
+        "participants": [
+            "christianengineer",
+            "wangjingf"
+        ]
+    },
+    {
+        "number": 12372,
+        "created_at": "2021-12-02 21:17:13+00:00",
+        "author": "SMCSBeavers",
+        "title": "feat: Add warning message to compile for usage of 'this' with additio\u2026",
+        "participants": [
+            "SMCSBeavers"
+        ]
+    },
+    {
+        "number": 12344,
+        "created_at": "2021-11-03 16:53:13+00:00",
+        "author": "MrWindlike",
+        "title": "fix(v-show): display is not correct after v-show unbind (fix #11984)",
+        "participants": [
+            "posva",
+            "MrWindlike"
+        ]
+    },
+    {
+        "number": 12376,
+        "created_at": "2021-12-05 16:35:33+00:00",
+        "author": "fieteboerner",
+        "title": "fix #12374: do not hyphenate or omit CSS variables in style attribute",
+        "participants": [
+            "abdih",
+            "abdih",
+            "abdih",
+            "fieteboerner",
+            "fieteboerner",
+            "fieteboerner"
+        ]
+    },
+    {
+        "number": 12403,
+        "created_at": "2021-12-28 18:15:57+00:00",
+        "author": "thomasrockhu-codecov",
+        "title": "ci: Update CircleCI pipeline to run Codecov",
+        "participants": [
+            "posva",
+            "thomasrockhu-codecov",
+            "thomasrockhu-codecov"
+        ]
+    },
+    {
+        "number": 12414,
+        "created_at": "2022-01-09 02:01:27+00:00",
+        "author": "Cyebukayire",
+        "title": "Chore: fixed punctuation errors",
+        "participants": [
+            "Cyebukayire"
+        ]
+    },
+    {
+        "number": 12416,
+        "created_at": "2022-01-12 07:21:17+00:00",
+        "author": "tongzhenyu0312",
+        "title": "refactor(observer): avoid eager new Dep()",
+        "participants": [
+            "tongzhenyu0312"
+        ]
+    },
+    {
+        "number": 12422,
+        "created_at": "2022-01-14 22:26:16+00:00",
+        "author": "Schweinepriester",
+        "title": "docs(readme & backers): HTTP => HTTPS",
+        "participants": [
+            "Schweinepriester"
+        ]
+    },
+    {
+        "number": 12426,
+        "created_at": "2022-01-19 12:58:26+00:00",
+        "author": "lzxb",
+        "title": "Vue SSR did not inject the extracted CSS file",
+        "participants": [
+            "lzxb"
+        ]
+    },
+    {
+        "number": 12435,
+        "created_at": "2022-01-22 15:54:05+00:00",
+        "author": "hardfist",
+        "title": "fix(ssr): fix compatibility with webpack@4 and webpack@5 for monorepos",
+        "participants": [
+            "ulivz",
+            "SpySioutis",
+            "hardfist"
+        ]
+    },
+    {
+        "number": 12455,
+        "created_at": "2022-02-03 05:23:54+00:00",
+        "author": "espresso",
+        "title": "fix(core): add prop name to invalid prop type warning message (fix #12454)",
+        "participants": [
+            "espresso"
+        ]
+    },
+    {
+        "number": 12464,
+        "created_at": "2022-02-10 07:00:07+00:00",
+        "author": "wubaiqing",
+        "title": "chore: fix license link",
+        "participants": [
+            "wubaiqing"
+        ]
+    },
+    {
+        "number": 12495,
+        "created_at": "2022-03-07 18:44:35+00:00",
+        "author": "Abreto",
+        "title": "types(compiler): add missing start/end fields",
+        "participants": [
+            "Abreto"
+        ]
+    },
+    {
+        "number": 12487,
+        "created_at": "2022-03-01 12:24:38+00:00",
+        "author": "cuishuang",
+        "title": "chore: fix typos [skip ci]",
+        "participants": [
+            "BlackCrowxyz",
+            "cuishuang"
+        ]
+    },
+    {
+        "number": 12501,
+        "created_at": "2022-03-17 12:13:02+00:00",
+        "author": "anncwb",
+        "title": "chore: Improve npm package specification",
+        "participants": [
+            "anncwb"
+        ]
+    },
+    {
+        "number": 12662,
+        "created_at": "2022-07-15 03:12:47+00:00",
+        "author": "KingCheni",
+        "title": "refactor: add some types support",
+        "participants": [
+            "KingCheni"
+        ]
+    },
+    {
+        "number": 12551,
+        "created_at": "2022-06-03 21:25:30+00:00",
+        "author": "Timsonrobl",
+        "title": "fix(core): hydrated node assertion in production",
+        "participants": [
+            "Timsonrobl"
+        ]
+    },
+    {
+        "number": 12520,
+        "created_at": "2022-04-10 09:57:50+00:00",
+        "author": "VICTORYGS",
+        "title": "Merge the code of the event modifier",
+        "participants": [
+            "VICTORYGS"
+        ]
+    },
+    {
+        "number": 12560,
+        "created_at": "2022-06-17 12:13:45+00:00",
+        "author": "Fyerl",
+        "title": "perf(core): loop through `oldCh` from `start + 1`",
+        "participants": [
+            "Fyerl"
+        ]
+    },
+    {
+        "number": 12504,
+        "created_at": "2022-03-23 16:50:58+00:00",
+        "author": "NikhilVerma",
+        "title": "Allow inferring types from Vue.set(object, ...) pattern",
+        "participants": [
+            "NikhilVerma"
+        ]
+    },
+    {
+        "number": 12763,
+        "created_at": "2022-08-26 02:52:57+00:00",
+        "author": "dafengxiang",
+        "title": "fix(types): Fix missing function type declaration for ref attribute",
+        "participants": [
+            "dafengxiang"
+        ]
+    },
+    {
+        "number": 12764,
+        "created_at": "2022-08-26 13:16:44+00:00",
+        "author": "minseolee",
+        "title": "chore: update PR Template",
+        "participants": [
+            "minseolee"
+        ]
+    },
+    {
+        "number": 12766,
+        "created_at": "2022-08-29 07:28:46+00:00",
+        "author": "minseolee",
+        "title": "chore: remove eslint related contents",
+        "participants": [
+            "minseolee"
+        ]
+    },
+    {
+        "number": 12771,
+        "created_at": "2022-08-29 15:52:06+00:00",
+        "author": "jp-liu",
+        "title": "feat(core): keep-alive component that responds to max property changes (fix  #12770)",
+        "participants": [
+            "jp-liu"
+        ]
+    },
+    {
+        "number": 12793,
+        "created_at": "2022-09-20 08:22:44+00:00",
+        "author": "xiaoxiangmoe",
+        "title": "fix(types): remove number type of provide",
+        "participants": [
+            "xiaoxiangmoe"
+        ]
+    },
+    {
+        "number": 12772,
+        "created_at": "2022-08-30 11:02:07+00:00",
+        "author": "woshiqiang1",
+        "title": "refactor: word spell error",
+        "participants": [
+            "woshiqiang1"
+        ]
+    },
+    {
+        "number": 12795,
+        "created_at": "2022-09-20 10:13:52+00:00",
+        "author": "sashashura",
+        "title": "GitHub Workflows security hardening",
+        "participants": [
+            "sashashura"
+        ]
+    },
+    {
+        "number": 12826,
+        "created_at": "2022-10-13 15:42:24+00:00",
+        "author": "rx-837",
+        "title": "fix: allow keys from Object.prototype like 'constructor' etc as value in attribute 'key'",
+        "participants": [
+            "rx-837"
+        ]
+    },
+    {
+        "number": 12801,
+        "created_at": "2022-09-26 08:23:38+00:00",
+        "author": "albertjannap",
+        "title": "resolved vulnerabilities",
+        "participants": [
+            "albertjannap"
+        ]
+    },
+    {
+        "number": 12836,
+        "created_at": "2022-10-17 15:24:48+00:00",
+        "author": "IagoLast",
+        "title": "chore(types): Add HTMLInput autocomplete values",
+        "participants": [
+            "IagoLast"
+        ]
+    },
+    {
+        "number": 12830,
+        "created_at": "2022-10-15 17:12:59+00:00",
+        "author": "sawmurai",
+        "title": "fix #12623: infinite loop in generateCodeFrame",
+        "participants": [
+            "sawmurai"
+        ]
+    },
+    {
+        "number": 12838,
+        "created_at": "2022-10-19 03:26:24+00:00",
+        "author": "kirklin",
+        "title": "ci: bump actions versions",
+        "participants": [
+            "kirklin"
+        ]
+    },
+    {
+        "number": 12845,
+        "created_at": "2022-10-21 00:15:40+00:00",
+        "author": "azat-io",
+        "title": "chore: migrate to picocolors",
+        "participants": [
+            "azat-io"
+        ]
+    },
+    {
+        "number": 12853,
+        "created_at": "2022-10-26 14:34:49+00:00",
+        "author": "webfansplz",
+        "title": "feat(sfc): support using extends interface with `defineProps`",
+        "participants": [
+            "sxzz",
+            "webfansplz"
+        ]
+    },
+    {
+        "number": 12850,
+        "created_at": "2022-10-26 14:07:02+00:00",
+        "author": "webfansplz",
+        "title": "refactor(types): improve `isValidDuration` type",
+        "participants": [
+            "posva",
+            "sxzz",
+            "YasinAshorian",
+            "webfansplz"
+        ]
+    },
+    {
+        "number": 12866,
+        "created_at": "2022-11-04 02:37:10+00:00",
+        "author": "someBrown",
+        "title": "fix/nested-setup",
+        "participants": [
+            "someBrown"
+        ]
+    },
+    {
+        "number": 12857,
+        "created_at": "2022-10-31 07:03:49+00:00",
+        "author": "lzxb",
+        "title": "Update jsx.d.ts TableHTMLAttributes",
+        "participants": [
+            "hexiaokang",
+            "lzxb"
+        ]
+    },
+    {
+        "number": 12868,
+        "created_at": "2022-11-05 03:19:46+00:00",
+        "author": "webfansplz",
+        "title": "chore(types): remove unnecessary type assertions",
+        "participants": [
+            "sxzz",
+            "webfansplz"
+        ]
+    },
+    {
+        "number": 12855,
+        "created_at": "2022-10-28 10:50:39+00:00",
+        "author": "wujieZ",
+        "title": "style: remove WTF, keep it classy, enjoy Typescript",
+        "participants": [
+            "sxzz",
+            "wujieZ"
+        ]
+    },
+    {
+        "number": 12861,
+        "created_at": "2022-11-02 13:26:27+00:00",
+        "author": "webfansplz",
+        "title": "chore: fix typo",
+        "participants": [
+            "sxzz",
+            "webfansplz"
+        ]
+    },
+    {
+        "number": 12869,
+        "created_at": "2022-11-06 15:53:37+00:00",
+        "author": "Simon-He95",
+        "title": "refactor: compiler-sfc",
+        "participants": [
+            "sxzz",
+            "Simon-He95"
+        ]
+    },
+    {
+        "number": 12856,
+        "created_at": "2022-10-28 14:11:38+00:00",
+        "author": "c0dedance",
+        "title": "style: remove WTF, also keep it classy [skip ci]",
+        "participants": [
+            "sxzz",
+            "c0dedance",
+            "sxzz",
+            "YasinAshorian",
+            "c0dedance"
+        ]
+    },
+    {
+        "number": 12870,
+        "created_at": "2022-11-07 16:24:05+00:00",
+        "author": "XuanhaoZhao",
+        "title": "change some grammar mistakes",
+        "participants": [
+            "sxzz",
+            "XuanhaoZhao"
+        ]
+    },
+    {
+        "number": 12874,
+        "created_at": "2022-11-09 10:19:54+00:00",
+        "author": "Simon-He95",
+        "title": "refactor: tidy up compiler",
+        "participants": [
+            "sxzz",
+            "sxzz",
+            "sxzz",
+            "YasinAshorian",
+            "Simon-He95"
+        ]
+    },
+    {
+        "number": 12888,
+        "created_at": "2022-11-30 03:40:06+00:00",
+        "author": "enpitsuLin",
+        "title": "fix: toString utils should unref the `Ref<T>`",
+        "participants": [
+            "enpitsuLin"
+        ]
+    },
+    {
+        "number": 12887,
+        "created_at": "2022-11-28 16:03:57+00:00",
+        "author": "blake-newman",
+        "title": "fix(types): deny unknown attributes by default",
+        "participants": [
+            "blake-newman"
+        ]
+    },
+    {
+        "number": 12898,
+        "created_at": "2022-12-09 06:29:53+00:00",
+        "author": "someBrown",
+        "title": "fix #12897:call newly pushed watcher orderly",
+        "participants": [
+            "someBrown"
+        ]
+    },
+    {
+        "number": 12906,
+        "created_at": "2022-12-19 16:54:17+00:00",
+        "author": "linshuohao",
+        "title": "fix(compiler-sfc): fix rewriteDefault problem when using @babel/parser@^7.20.0",
+        "participants": [
+            "linshuohao"
+        ]
+    },
+    {
+        "number": 12849,
+        "created_at": "2022-10-26 13:51:07+00:00",
+        "author": "webfansplz",
+        "title": "types(common): improve LooseRequired<T>",
+        "participants": [
+            "sxzz",
+            "webfansplz"
+        ]
+    },
+    {
+        "number": 12917,
+        "created_at": "2023-01-02 03:36:47+00:00",
+        "author": "FireBushtree",
+        "title": "refactor(compiler): add stack type instead of any",
+        "participants": [
+            "FireBushtree"
+        ]
+    },
+    {
+        "number": 12928,
+        "created_at": "2023-01-13 15:45:52+00:00",
+        "author": "tinyfind",
+        "title": "fix(compiler): scoped slot can't udate with with different slot content",
+        "participants": [
+            "tinyfind"
+        ]
+    },
+    {
+        "number": 12907,
+        "created_at": "2022-12-20 06:53:18+00:00",
+        "author": "Simon-He95",
+        "title": "chore: add prettier cache",
+        "participants": [
+            "sxzz",
+            "Simon-He95"
+        ]
+    },
+    {
+        "number": 12933,
+        "created_at": "2023-01-17 09:15:58+00:00",
+        "author": "xch1029",
+        "title": "fix: error vue path in select2 example",
+        "participants": [
+            "xch1029"
+        ]
+    },
+    {
+        "number": 12938,
+        "created_at": "2023-01-18 21:17:41+00:00",
+        "author": "NoahKa0",
+        "title": "fix(patch): Do not consider nodes with different scope ids the same (fix #10416)",
+        "participants": [
+            "NoahKa0"
+        ]
+    },
+    {
+        "number": 12932,
+        "created_at": "2023-01-17 09:00:11+00:00",
+        "author": "tinyfind",
+        "title": "fix(core):  prop check warning with ref unwrap in dev",
+        "participants": [
+            "tinyfind"
+        ]
+    },
+    {
+        "number": 12942,
+        "created_at": "2023-01-24 14:01:32+00:00",
+        "author": "ajomuch92",
+        "title": "Feat/show important directive",
+        "participants": [
+            "ajomuch92"
+        ]
+    },
+    {
+        "number": 12946,
+        "created_at": "2023-01-30 06:58:54+00:00",
+        "author": "btea",
+        "title": "fix: correctly update styles",
+        "participants": [
+            "sxzz",
+            "btea"
+        ]
+    },
+    {
+        "number": 12957,
+        "created_at": "2023-02-12 09:56:08+00:00",
+        "author": "rudyxu1102",
+        "title": "fix(types): remove unused code",
+        "participants": [
+            "rudyxu1102"
+        ]
+    },
+    {
+        "number": 12972,
+        "created_at": "2023-02-28 09:38:34+00:00",
+        "author": "xiaowei-one",
+        "title": "fix: trigger when adding new property with Vue.set",
+        "participants": [
+            "xiaowei-one"
+        ]
+    },
+    {
+        "number": 12964,
+        "created_at": "2023-02-18 08:49:20+00:00",
+        "author": "rudyxu1102",
+        "title": "fix(types): support inferring `inject`",
+        "participants": [
+            "ColinRosati",
+            "rudyxu1102"
+        ]
+    },
+    {
+        "number": 12987,
+        "created_at": "2023-03-18 13:49:41+00:00",
+        "author": "Yhspehy",
+        "title": "fix(keep-alive): avoid change reference of keep-alive's vnode on prev\u2026",
+        "participants": [
+            "Yhspehy"
+        ]
+    },
+    {
+        "number": 12989,
+        "created_at": "2023-03-20 10:27:57+00:00",
+        "author": "cutsin",
+        "title": "fix: `inBrowser` needs to check existence of `document`",
+        "participants": [
+            "cutsin"
+        ]
+    },
+    {
+        "number": 12985,
+        "created_at": "2023-03-16 11:54:35+00:00",
+        "author": "lsdsjy",
+        "title": "fix(sfc): check template `ref` usage, fix #12984",
+        "participants": [
+            "lsdsjy"
+        ]
+    },
+    {
+        "number": 12997,
+        "created_at": "2023-03-30 13:34:29+00:00",
+        "author": "blake-newman",
+        "title": "fix: typescript resolution",
+        "participants": [
+            "blake-newman"
+        ]
+    },
+    {
+        "number": 12979,
+        "created_at": "2023-03-07 23:54:12+00:00",
+        "author": "simlevesque",
+        "title": "fix#12978 shallowRef's return type ",
+        "participants": [
+            "simlevesque"
+        ]
+    },
+    {
+        "number": 13004,
+        "created_at": "2023-04-20 04:02:20+00:00",
+        "author": "g-plane",
+        "title": "fix(types): fix method-based emits with props",
+        "participants": [
+            "g-plane"
+        ]
+    },
+    {
+        "number": 13008,
+        "created_at": "2023-04-24 12:06:57+00:00",
+        "author": "zhangzhonghe",
+        "title": "fix(svg): apply every namespace in slot when call applyNS",
+        "participants": [
+            "zhangzhonghe"
+        ]
+    },
+    {
+        "number": 13014,
+        "created_at": "2023-04-28 14:12:03+00:00",
+        "author": "AlirezaBabaeii",
+        "title": "refactor(stream): This commit refactors the RenderStream class in the\u2026",
+        "participants": [
+            "AlirezaBabaeii"
+        ]
+    },
+    {
+        "number": 13021,
+        "created_at": "2023-05-20 15:31:39+00:00",
+        "author": "vj00000",
+        "title": "Update jsx.d.ts",
+        "participants": [
+            "vj00000"
+        ]
+    },
+    {
+        "number": 13022,
+        "created_at": "2023-05-24 08:33:29+00:00",
+        "author": "SamXChen",
+        "title": "fix(core/instance/render): inherit instance listeners to rendered vnode",
+        "participants": [
+            "SamXChen"
+        ]
+    },
+    {
+        "number": 13036,
+        "created_at": "2023-06-17 06:51:26+00:00",
+        "author": "hongrunhui",
+        "title": "feat(build): add source when build",
+        "participants": [
+            "hongrunhui"
+        ]
+    },
+    {
+        "number": 13047,
+        "created_at": "2023-07-05 01:57:49+00:00",
+        "author": "Alfred-Skyblue",
+        "title": "chore: improve the types for $set and $delete",
+        "participants": [
+            "Alfred-Skyblue"
+        ]
+    },
+    {
+        "number": 13054,
+        "created_at": "2023-07-22 14:46:47+00:00",
+        "author": "LockingReal",
+        "title": "perf(server-renderer):normalizeValue function prioritizes the judgmen\u2026",
+        "participants": [
+            "LockingReal"
+        ]
+    },
+    {
+        "number": 13063,
+        "created_at": "2023-08-04 08:34:31+00:00",
+        "author": "zcf0508",
+        "title": "fix(types): fix props type error with js script",
+        "participants": [
+            "zcf0508"
+        ]
+    },
+    {
+        "number": 13053,
+        "created_at": "2023-07-19 17:06:06+00:00",
+        "author": "ShGKme",
+        "title": "chore(compiler-sfc): specify prettier version (fix #13052)",
+        "participants": [
+            "ShGKme"
+        ]
+    },
+    {
+        "number": 13067,
+        "created_at": "2023-08-17 05:14:56+00:00",
+        "author": "xonx4l",
+        "title": "fix: type VNodeChildren supports type number ",
+        "participants": [
+            "xonx4l"
+        ]
+    },
+    {
+        "number": 13089,
+        "created_at": "2023-09-25 12:01:49+00:00",
+        "author": "rudyxu1102",
+        "title": "feat(types): support inferring attrs",
+        "participants": [
+            "rudyxu1102"
+        ]
+    },
+    {
+        "number": 13105,
+        "created_at": "2023-10-23 10:29:49+00:00",
+        "author": "so1ve",
+        "title": "fix: convert emits to props, fix #13104",
+        "participants": [
+            "so1ve"
+        ]
+    },
+    {
+        "number": 13107,
+        "created_at": "2023-10-24 22:55:38+00:00",
+        "author": "thebanjomatic",
+        "title": "fix: type augmentation and compiler-sfc types w/moduleResolution: bundler (fix #13106)",
+        "participants": [
+            "thebanjomatic",
+            "thebanjomatic"
+        ]
+    },
+    {
+        "number": 13109,
+        "created_at": "2023-11-01 08:43:52+00:00",
+        "author": "Ilanaya",
+        "title": "fix(types): no props typings in js files",
+        "participants": [
+            "Ilanaya",
+            "Ilanaya"
+        ]
+    },
+    {
+        "number": 13090,
+        "created_at": "2023-09-25 17:22:22+00:00",
+        "author": "Guakocius",
+        "title": "Resolved several typos and grammar errors",
+        "participants": [
+            "Guakocius"
+        ]
+    },
+    {
+        "number": 13120,
+        "created_at": "2023-11-20 10:01:00+00:00",
+        "author": "lbjlsy",
+        "title": "fix: Optimize scope values",
+        "participants": [
+            "lbjlsy"
+        ]
+    },
+    {
+        "number": 13112,
+        "created_at": "2023-11-03 01:13:47+00:00",
+        "author": "sam0212",
+        "title": "fix(core - patch)\uff1awhen before patch: old keys like [a, b, c ...] new \u2026",
+        "participants": [
+            "sam0212"
+        ]
+    },
+    {
+        "number": 13110,
+        "created_at": "2023-11-01 11:42:28+00:00",
+        "author": "loadingjoke",
+        "title": "fix: diff of list [a,b,c,d] and [e,b,b,f],error happened and make vue-router cant update",
+        "participants": [
+            "loadingjoke"
+        ]
+    },
+    {
+        "number": 13124,
+        "created_at": "2023-11-27 13:40:52+00:00",
+        "author": "DeAntiWang",
+        "title": "fix(compiler-sfc): support SequenceExpression for `defineEmit`(fix #13122)",
+        "participants": [
+            "DeAntiWang"
+        ]
+    }
+]

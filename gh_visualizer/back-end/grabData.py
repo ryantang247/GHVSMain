@@ -1,6 +1,7 @@
 import concurrent.futures
 import json
 import time
+from datetime import datetime
 
 import requests
 from github import Github
@@ -15,6 +16,7 @@ class GitHubRepoAnalyzer:
         self.__repo = Github(access_token).get_repo(f"{owner}/{repo_name}")
         self.__output_file_path = "../src/output.json"
         self.__all_pr_data = []
+        self.__pulls_by_month = {}
 
     def __get_file_tree(self, commit_sha):
         files = self.__repo.get_commit(commit_sha).files
@@ -26,7 +28,7 @@ class GitHubRepoAnalyzer:
     def __generate_pull_request_data(self, pull_request):
         head_commit = pull_request.head.sha
         labels_data = [{"color": label.color, "name": label.name} for label in pull_request.labels]
-
+        pulls_by_month = {}
         # Get files changed in the pull request
         files_changed_url = f'https://api.github.com/repos/{self.__owner}/{self.__repo_name}/pulls/{pull_request.number}/files'
         headers = {'User-Agent': 'request', 'Authorization': 'Bearer {}'.format(self.__access_token)}
@@ -34,10 +36,13 @@ class GitHubRepoAnalyzer:
         filetree = []
         changed_files = []
         if response.status_code == 200:
+
+            # handle the file changed
             files_changed = response.json()
             modified_files_data = []
             changed_files = [file['filename'] for file in files_changed]
 
+            pulls_by_month = {}
             for file_changed in files_changed:
                 filename = file_changed['filename']
                 additions = file_changed['additions']
@@ -67,6 +72,16 @@ class GitHubRepoAnalyzer:
         else:
             print(f"Failed to get files changed. Status code: {response.status_code}")
             modified_files_data = []
+
+        created_at = str(pull_request.created_at)  # ISO 8601 format
+        created_datetime = datetime.fromisoformat(created_at)
+        year_month = created_datetime.strftime("%Y-%m")
+
+        if year_month not in pulls_by_month:
+            self.__pulls_by_month[year_month] = {"count": 0, "pull_numbers": []}
+
+        self.__pulls_by_month[year_month]["count"] += 1
+        self.__pulls_by_month[year_month]["pull_numbers"].append(pull_request.number)
 
         pull_request_data = {
             "number": pull_request.number,
@@ -98,10 +113,15 @@ class GitHubRepoAnalyzer:
 
         print("Writing file...")
         with open(self.__output_file_path, "w", encoding="utf-8") as output_file:
-            json.dump(self.__all_pr_data, output_file, indent=2)
+            combined_data = {
+                "pulls_by_month": self.__pulls_by_month,
+                "all_pr_data": self.__all_pr_data
+            }
+            json.dump(combined_data, output_file, indent=2)
+
         end_time = time.time()
         print(f"Output written to {self.__output_file_path}, take {end_time - start_time:.2f} seconds")
-        return json.dumps(self.__all_pr_data, indent=2)
+        return json.dumps(combined_data, indent=2)
 
 if __name__ == '__main__':
     # Replace with your actual access token, owner, and repo name

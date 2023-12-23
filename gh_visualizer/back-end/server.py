@@ -3,6 +3,7 @@ import json
 
 from flask import Flask, jsonify, request, session
 import grabData
+import graphQL
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
@@ -47,7 +48,7 @@ def process_data():
     my_repo_name = my_dict.get('my_repo_name')
 
     # Create an instance of GitHubRepoAnalyzer
-    analyzer = grabData.GitHubRepoAnalyzer(github_token, my_owner, my_repo_name)
+    analyzer = graphQL.GitHubRepoAnalyzer(github_token, my_owner, my_repo_name)
 
     # Call the analyze_repo method to perform the analysis
     jsonfile = analyzer.analyze_repo()

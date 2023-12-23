@@ -1,11 +1,12 @@
 <template>
   <div class="flex-container">
   <div>
+    <v-row>
   <v-card
-    class="mx-auto pa-2 overflow-y-auto overflow-x:auto"
-    max-width="400" max-height="400"
+    class="mx-auto pa-2 overflow-y-auto overflow-x:auto list-style"
+    max-width="700" max-height="400"
   >
-      <v-list-subheader>Pull requests</v-list-subheader>
+      <v-list-subheader >Pull requests</v-list-subheader>
 
       <v-list-item
         v-for="(pull, i) in pulls"
@@ -28,6 +29,24 @@
         </div>
       </v-list-item>
   </v-card>
+    </v-row>
+      <v-row>
+        <Moveable  ref="moveable"
+                   :draggable="true"
+                   :bounds="{ left: 0, top: 0, right: 400, bottom: 400 }"
+                   :target="this.$refs.targetRef"
+                   @drag="onDrag"
+                   @scale="onScale">
+
+        </Moveable>
+        <!-- Container for the draggable component -->
+        <div style="position: relative; width: 700px; height: 600px; border: 1px solid #ccc; margin: 10px">
+          <div ref="targetRef">
+            <nodesChart/>
+          </div>
+
+        </div>
+      </v-row>
   </div>
   <div class="treemap-container">
     <div v-if="treeMap1" class="treemap">
@@ -50,11 +69,13 @@
 <script>
 // import Moveable from "vue3-moveable";
 import TreeMap from "@/components/FileTree.vue";
-
+import nodesChart from "@/components/nodesChart.vue";
+import Moveable from "vue3-moveable";
 export default {
   name: 'PullList',
   components: {
-    TreeMap
+
+    TreeMap,nodesChart,Moveable
     // Moveable,
   },
   props: {
@@ -69,11 +90,15 @@ export default {
       tooltipIndex: null,
       treeMap1: null,
       treeMap2:null,
-      mouseX: 0,
-      mouseY: 0,
     };
   },
   methods:{
+    onDrag(e) {
+      e.target.style.transform = e.transform;
+    },
+    onScale(e) {
+      e.target.style.transform = e.drag.transform;
+    },
     updateTooltipPosition(event) {
       if (this.tooltipIndex !== null) {
         const tooltip = this.$refs.tooltip;
@@ -155,7 +180,7 @@ export default {
         });
       });
       const result = JSON.stringify(root, null, 2)
-      console.log(result)
+      // console.log(result)
       return result;
   }
   }
@@ -168,7 +193,7 @@ export default {
   margin-right: 10px; /* Adjust margin between treemaps */
 }
 .treemap-container {
-  width: 2000px;
+  width: 1500px;
   height: 1000px;
   display: flex;
   border: 1px solid #ccc; /* Border around the container */
@@ -207,5 +232,9 @@ export default {
 }
 .flex-container {
   display: flex;
+}
+
+.list-style{
+  margin-left: 10px;
 }
 </style>
